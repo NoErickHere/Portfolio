@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.intro {
+  padding-top: 50px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: helvetica;
+}
+
+.topnav a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.left {
+  width: 25%;
+}
+.column.right {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="#">Written</a>
+    <a href="#">Image</a>
+  </div>
+
+  <div class="row">
+  <div class="column left">
+    <h2>Erick Fowler</h2>
+    <img src="erickFowler.jpeg" alt="It's a picture of me" style="width:50%;height:50%;">
+  </div>
+  <div class="column right">
+      <div class="intro">
+      <p>Something something, I'm an artist. Please like my work.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
