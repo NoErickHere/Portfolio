@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  margin: 0 5px;
+}
+div.fixed {
+  position: absolute;
+  top: 300px;
+  left: 45%;
+}
+
+.flex-container {
+  display: .flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  margin: 0 -5px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: black;
+
+}
+</style>
+</head>
+
+<body>
+<div class="flex-container">
+<div class="fixed">
+<button class="button" onclick="window.location.href = 'words.html';">Words!</button>
+<button class="button" onclick="window.location.href = 'images.html';">Images!</button>
+<button class="button" onclick="window.location.href = 'cvAndMe.html';">CV and Me!</button>
+</div>
+</div>
+</body>
+</html>
