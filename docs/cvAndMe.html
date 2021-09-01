@@ -6,26 +6,35 @@
 
 <body>
   <div class="topnav">
-    <a href="#">Written</a>
-    <a href="#">Image</a>
+    <a href="#" onclick="window.location.href = 'words.html';">Written</a>
+    <a href="#" onclick="window.location.href = 'images.html';">Image</a>
   </div>
 
   <div class="row">
   <div class="column left">
     <h2>Me</h2>
-    <img src="erickFowler.jpeg" alt="It's a picture of me" style="width:50%;height:50%;">
+    <img src="erickFowler.jpeg" alt="It's a picture of me" style="width:50%;">
     <p>Erick Fowler is a writer and researcher based in Amsterdam. Originally from Tulsa, Oklahoma, he received his Bachelor of Arts in Digital Culture (Film) from Arizona State University in 2019. He is enrolled at Universiteit van Amsterdam within the Art and Performance Research Studies master’s programme. His interests are centred broadly around the intersection of artistic practice and institutions. The most recent strand of his research looks at the history of institutional critique and museum reform drawing out implications for abolitionist struggles against the carceral state and carceral logics. </p>
   </div>
-  <div class="column right">
-      <div class="intro">
-      <object data="ErickFowler-CV.pdf" type="application/pdf" width="100%" height="500%">
+  <div id="cv">
+  <object id="cvO" width="200%" height="200%" data="ErickFowler-CV.pdf">
 This browser does not support PDFs. Please download my CV instead!
 </object>
-      <a href="ErickFowler-CV.rtf">Take a cv! (it's free)</a>
-
+<a href="ErickFowler-CV.rtf">Take a cv! (it's free)</a>
+</div>
+  <div class="column right">
       </div>
     </div>
   </div>
 
 </body>
+<script>
+$(document).ready(function(){
+
+    $("#cvO").width($("#cv").width());
+    $("#cvO").height($("#cv").height());
+
+});
+</script>
+
 </html>
